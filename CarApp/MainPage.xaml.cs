@@ -26,5 +26,19 @@ namespace CarApp
         {
             this.InitializeComponent();
         }
+
+        private void trucks_Click(object sender, RoutedEventArgs e)
+        {
+            int value1 = int.Parse(trucksText.Text);
+            value1++;
+            trucksText.Text = value1.ToString();
+        }
+
+        private void cars_Click(object sender, RoutedEventArgs e)
+        {
+            int value2 = int.Parse(carsText.Text);
+            value2++;
+            carsText.Text = value2.ToString();
+        }
     }
 }

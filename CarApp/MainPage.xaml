@@ -8,6 +8,30 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="trucks" Content="Trucks" HorizontalAlignment="Left" Margin="320.21,168.291,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" FontSize="30" Width="340.773" d:LayoutRounding="Auto" Height="59.033" Click="trucks_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="35.959"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="cars" Content="Cars" HorizontalAlignment="Left" Margin="506.493,132.808,0,0" VerticalAlignment="Top" Height="59.466" Width="336.456" FontSize="30" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="cars_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="34.735"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="trucksText" HorizontalAlignment="Left" Margin="415,341,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="124" FontSize="25" TextAlignment="Center" Height="50" />
+        <TextBlock x:Name="carsText" HorizontalAlignment="Left" Margin="656,324,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Height="44" RenderTransformOrigin="2.812,-2.567" Width="124" FontSize="25" TextAlignment="Center"/>
 
     </Grid>
 </Page>
